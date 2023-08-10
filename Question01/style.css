@@ -1,0 +1,26 @@
+
+body {
+    background-color: #8e1b1b97;
+    font-size: 16px;
+    color: hsla(184, 43%, 38%, 0);
+  }
+  h1{
+    color: #010000;
+  }
+  .content{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: #ffa502;
+    font-family:Helvetica;
+  }
+  h2, h3 {
+    text-align: center;
+    color: #27e80d;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #010000;
+  }
+  

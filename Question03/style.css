@@ -1,0 +1,59 @@
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.thumbnail {
+    cursor: pointer;
+    position: relative;
+}
+
+.thumbnail img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    transition: transform 0.3s;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.1);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.thumbnail input[type="radio"] {
+    display: none;
+}
+
+.thumbnail input[type="radio"]:checked + .lightbox {
+    display: flex;
+}
+
+.thumbnail label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
